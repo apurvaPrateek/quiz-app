@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-weight: 500;
+    word-spacing: 1.2;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(135deg, blue, rgb(5, 5, 69));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    min-width: 600px;
+    max-width: 800px;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 5px;
+
+}
+
+.head{
+    color: rgb(5, 5, 86);
+    border-bottom: 2px solid rgb(14, 14, 18);
+}
+
+.question{
+    color: blue;
+}
+
+
+
+.options ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+.options li{
+    width: 100%;
+    border: 2px solid rgb(39, 38, 38);
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.wrong{
+    background-color: red;
+    color: white;
+}
+
+.correct{
+    background-color: green;
+    color: white;
+}
+
+.unclickable{
+    pointer-events: none;
+}
+
+.options li:hover{
+    background-color: grey;
+    color: white
+}
+
+.action{
+    align-self: center;
+    display: none;
+}
+
+.action button{
+    font-size: 1rem;
+    padding: 5px 50px;
+    margin: 5px;
+    background-color: rgb(2, 2, 38);
+    border-radius: 2px;
+    color: white;
+}
+
+.score{
+    display: none;
+    color: blue;
+    font-weight: 600;
+}
